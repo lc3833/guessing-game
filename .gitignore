@@ -1,0 +1,12 @@
+.idea/
+*.iml
+*.iws
+out/
+target/
+classes/
+*.class
+stats.edn
+achievements.edn
+.DS_Store
+Thumbs.db
+*.log

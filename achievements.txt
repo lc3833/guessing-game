@@ -1,0 +1,37 @@
+==========================================
+       🏆 HALL OF ACHIEVEMENTS 🏆       
+==========================================
+
+👤 PLAYER: cveks
+------------------------------------------
+  💰 Big Winner        | Scored over 2000 points in a single round!
+  💯 Centurion         | Total lifetime score over 100,000!
+  🤖 Cyber Sentry      | Solved 10 puzzles total.
+  🔥🔥 Double Digits   | Reached a 10x streak!
+  🦅 Eagle Eye         | Guessed correctly without any hints!
+  🌅 Early Bird        | Played a game between 05:00 and 08:00.
+  🌍 Globetrotter      | Solved 5 puzzles in Places category.
+  💀 Hardcore Hero     | Won a round on Hardcore mode!
+  💎 High Roller       | Scored over 3000 points in a single round!
+  🚫 Hint Hater        | Solved 10 puzzles total without ever using a hint!
+  🌿 Nature Lover      | Solved 5 puzzles in Nature category.
+  🦉 Night Owl         | Played a game between 00:00 and 05:00.
+  👋 Regular           | Played 5 separate sessions.
+  ⚡ Speed Demon        | Guessed in under 5 seconds!
+  🔥 Streak Master     | Reached a 5x streak!
+  💻 Tech Wizard       | Solved 5 puzzles in Objects category.
+
+👤 PLAYER: miljana
+------------------------------------------
+  💰 Big Winner        | Scored over 2000 points in a single round!
+  🤖 Cyber Sentry      | Solved 10 puzzles total.
+  🔥🔥 Double Digits   | Reached a 10x streak!
+  🦅 Eagle Eye         | Guessed correctly without any hints!
+  💎 High Roller       | Scored over 3000 points in a single round!
+  🚫 Hint Hater        | Solved 10 puzzles total without ever using a hint!
+  🌿 Nature Lover      | Solved 5 puzzles in Nature category.
+  🦉 Night Owl         | Played a game between 00:00 and 05:00.
+  🔥 Streak Master     | Reached a 5x streak!
+  🚀 Unstoppable       | Reached a 20x streak!
+
+==========================================

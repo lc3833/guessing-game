@@ -1,0 +1,42 @@
+
+      HIGH SCORES (EASY) 
+
+RANK  PLAYER          SCORE     
+------------------------------------------
+1     cveks           345022    
+2     cveks           66652     
+3     cveks           40651     
+4     cveks           24486     
+5     cveks           17878     
+==========================================
+
+      HIGH SCORES (MEDIUM) 
+
+RANK  PLAYER          SCORE     
+------------------------------------------
+1     cveks           6465      
+2     cveks           260       
+3     cveks           185       
+4     cveks           0         
+==========================================
+
+      HIGH SCORES (HARD) 
+
+RANK  PLAYER          SCORE     
+------------------------------------------
+1     miljana         67585     
+2     cveks           24754     
+3     cveks           110       
+4     cveks           80        
+==========================================
+
+      HIGH SCORES (HARDCORE) 
+
+RANK  PLAYER          SCORE     
+------------------------------------------
+1     cveks           38539     
+2     cveks           38497     
+3     cveks           34889     
+4     cveks           25903     
+5     cveks           24798     
+==========================================
