@@ -15,53 +15,53 @@
     (let [stats (assoc empty-stats :category-counts {:objects 5})]
       (is (contains? (evaluate empty-game-state empty-round-data stats 100) :tech-wizard))))
 
-  (testing "Nema achievementa ako nije dovoljno reseno"
+  (testing "No achievement if requirements are not met"
     (let [stats (assoc empty-stats :category-counts {:nature 4})]
       (is (not (contains? (evaluate empty-game-state empty-round-data stats 100) :nature-lover))))))
 
 (deftest test-speed-achievements
-  (testing "Speed Demon (< 5 sekundi)"
+  (testing "Speed Demon (< 5 seconds)"
     (let [round (assoc empty-round-data :result :perfect :total-time 60 :time-left 56)]
       (is (contains? (evaluate empty-game-state round empty-stats 100) :speed-demon))))
 
-  (testing "Sonic (< 2 sekunde)"
+  (testing "Sonic (< 2 seconds)"
     (let [round (assoc empty-round-data :result :perfect :total-time 60 :time-left 59)]
       (is (contains? (evaluate empty-game-state round empty-stats 100) :sonic)))))
 
 (deftest test-streak-achievements
-  (testing "Streak Master (5x)"
+  (testing "Streak Master (5x streak)"
     (let [state (assoc empty-game-state :streak 5)]
       (is (contains? (evaluate state empty-round-data empty-stats 100) :streak-master))))
 
-  (testing "Double Digits (10x)"
+  (testing "Double Digits (10x streak)"
     (let [state (assoc empty-game-state :streak 10)]
       (is (contains? (evaluate state empty-round-data empty-stats 100) :double-digits)))))
 
 (deftest test-point-achievements
-  (testing "High Roller (> 3000 poena u rundi)"
+  (testing "High Roller (> 3000 points in a single round)"
     (let [round (assoc empty-round-data :points 3500)]
       (is (contains? (evaluate empty-game-state round empty-stats 100) :high-roller))))
 
-  (testing "Centurion (Ukupan skor > 100.000)"
+  (testing "Centurion (Total lifetime score > 100,000)"
     (let [stats (assoc empty-stats :total-score 100001)]
       (is (contains? (evaluate empty-game-state empty-round-data stats 100) :centurion)))))
 
 (deftest test-time-of-day
-  (testing "Night Owl (Izmedju 00:00 i 05:00)"
+  (testing "Night Owl (Played between 00:00 and 05:00)"
     (with-redefs [achievements/get-current-hour (constantly 3)]
       (is (contains? (evaluate empty-game-state empty-round-data empty-stats 100) :night-owl))))
 
-  (testing "Early Bird (Izmedju 05:00 i 08:00)"
+  (testing "Early Bird (Played between 05:00 and 08:00)"
     (with-redefs [achievements/get-current-hour (constantly 6)]
       (is (contains? (evaluate empty-game-state empty-round-data empty-stats 100) :early-bird))))
 
-  (testing "Nema achievementa u podne"
+  (testing "No time-based achievement at noon"
     (with-redefs [achievements/get-current-hour (constantly 12)]
       (let [result (evaluate empty-game-state empty-round-data empty-stats 100)]
         (is (not (contains? result :night-owl)))
         (is (not (contains? result :early-bird)))))))
 
 (deftest test-completionist
-  (testing "The Completionist"
+  (testing "The Completionist (All database puzzles solved)"
     (let [stats (assoc empty-stats :solved-ids (set (range 100)))]
       (is (contains? (evaluate empty-game-state empty-round-data stats 100) :completionist)))))
